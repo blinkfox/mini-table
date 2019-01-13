@@ -10,6 +10,7 @@
 
     <name>mini-table</name>
     <description>A lightweight, non-dependent Java ASCII TABLE generation library.</description>
+    <url>https://github.com/blinkfox/mini-table</url>
 
     <licenses>
         <license>
@@ -25,6 +26,12 @@
             <url>https://blinkfox.github.io/</url>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git@github.com:blinkfox/mini-table.git</connection>
+        <developerConnection>scm:git@github.com:blinkfox/mini-table.git</developerConnection>
+        <url>https://github.com/blinkfox/mini-table</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

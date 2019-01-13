@@ -93,13 +93,14 @@ public final class MiniTable {
                 String value = o == null ? "null" : o.toString();
                 datas.add(value);
 
-                // 获取第 i 列的最大长度值，如果当前列的长度大于了以前的最大列，就覆盖最大列长度为当前的列长度.
+                // 获取第 i 列的最大长度值，如果该列数据不存在，就存储起来.
                 Integer maxColSize = this.maxColMap.get(i);
                 if (maxColSize == null) {
                     this.maxColMap.put(i, value.length());
                     continue;
                 }
 
+                // 如果当前列的长度大于了以前的最大列，就覆盖最大列长度为当前的列长度.
                 if (value.length() > maxColSize) {
                     this.maxColMap.put(i, value.length());
                 }
