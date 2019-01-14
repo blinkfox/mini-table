@@ -10,7 +10,7 @@
 
 - Lightweight, no dependencies (jar package only `13kb`)
 - API is easy to use
-- Easy to integrate or customize modifications, only one `Java` file, and code specification
+- Easy to integrate or customize modifications, only one [Java](https://github.com/blinkfox/mini-table/blob/master/src/main/java/com/blinkfox/minitable/MiniTable.java) file, and code specification
 
 ## How to use
 
