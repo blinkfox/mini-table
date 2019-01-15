@@ -78,5 +78,4 @@ Output Result:
 
 ## License
 
-本  类库遵守 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) 许可证.
 This [mini-table](https://github.com/blinkfox/mini-table) library is open sourced under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
