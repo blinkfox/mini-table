@@ -8,7 +8,7 @@
 
 ## 特性
 
-- 轻量级、无依赖（jar包仅`13kb`）
+- 轻量级、无依赖（jar包仅`9kb`）
 - API简单易用
 - 易于集成或定制修改，仅一个[Java](https://github.com/blinkfox/mini-table/blob/master/src/main/java/com/blinkfox/minitable/MiniTable.java)文件，且代码规范
 
