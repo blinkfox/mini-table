@@ -54,6 +54,16 @@ public final class MiniTable {
     }
 
     /**
+     * 将集合中的元素添加到表格中的表头数据中.
+     *
+     * @param headers 表头数据
+     * @return MiniTable对象
+     */
+    public MiniTable addHeaders(List<?> headers) {
+        return this.appendRows(RowType.HEADER, headers.toArray());
+    }
+
+    /**
      * 向表格中添加表头数据.
      *
      * @param objects 表头数据
@@ -66,7 +76,17 @@ public final class MiniTable {
     /**
      * 向表格中添加一行普通数据.
      *
-     * @param objects 表头数据
+     * @param datas 普通行数据
+     * @return MiniTable对象
+     */
+    public MiniTable addDatas(List<?> datas) {
+        return this.appendRows(RowType.DATA, datas.toArray());
+    }
+
+    /**
+     * 向表格中添加一行普通数据.
+     *
+     * @param objects 普通行数据
      * @return MiniTable对象
      */
     public MiniTable addDatas(Object... objects) {
@@ -83,7 +103,7 @@ public final class MiniTable {
         int len;
         if (objects != null && (len = objects.length) > 0) {
             if (this.maxColMap.size() > len) {
-                throw new IllegalArgumentException("向表格中插入某行数据的列数比之前的列数多了,请检查!");
+                throw new IllegalArgumentException("向表格中插入某行数据的列数与之前的列数不同,请检查!");
             }
 
             // 遍历传入的数据集合，并将其存入到行数据对象中.

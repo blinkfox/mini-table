@@ -1,5 +1,8 @@
 package com.blinkfox.minitable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -31,6 +34,14 @@ public class MiniTableTest {
      */
     @Test
     public void render() {
+        // 构造一行List集合类型的普通数据，用于测试List集合数据的添加.
+        List<Object> rowDatas = new ArrayList<Object>();
+        rowDatas.add("WangWu");
+        rowDatas.add("male");
+        rowDatas.add(48);
+        rowDatas.add("wangwu@163.com");
+        rowDatas.add("15809876236");
+
         String table = new MiniTable("The Title")
                 .addHeaders("Name", "Sex", "Age", "Email", "Phone")
                 .addDatas("LiLei", "male", 25, "lilei@gmail.com", "13809345219")
@@ -38,7 +49,7 @@ public class MiniTableTest {
                 .addHeaders("Name", "Sex", "Age", "Email", "Phone")
                 .addDatas("ZhangSan", "female", 32, "zhangsan@gmail.com", "13920199836")
                 .addDatas("Lisi", "male", 28, "lisi@qq.com", "13635781534")
-                .addDatas("WangWu", "male", 48, "wangwu@163.com", "15809876236")
+                .addDatas(rowDatas)
                 .render();
         Assert.assertEquals(TABLE, table);
     }
@@ -58,14 +69,18 @@ public class MiniTableTest {
      */
     @Test
     public void renderWithLongTitle() {
+        List<Object> headers = new ArrayList<Object>();
+        headers.add(12345);
+        headers.add("abcde");
+
         String table = new MiniTable("This is a too long title.")
-                .addHeaders("col11", "col12")
+                .addHeaders(headers)
                 .render();
         Assert.assertEquals(""
                 + "+---------------+\n"
                 + "| This is a too |\n"
                 + "+-------+-------+\n"
-                + "| col11 | col12 |\n"
+                + "| 12345 | abcde |\n"
                 + "+-------+-------+\n", table);
     }
 
