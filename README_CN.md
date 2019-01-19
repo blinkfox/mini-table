@@ -20,11 +20,9 @@
 <dependency>
     <groupId>com.blinkfox</groupId>
     <artifactId>mini-table</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 </dependency>
 ```
-
-> **注**：目前版本还是`SNAPSHOT`，可直接`copy` Java 文件使用。
 
 ### API 使用
 
