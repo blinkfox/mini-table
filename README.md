@@ -1,10 +1,10 @@
 # mini-table
 
-[![HitCount](http://hits.dwyl.io/blinkfox/mini-table.svg)](http://hits.dwyl.io/blinkfox/mini-table) [![Build Status](https://secure.travis-ci.org/blinkfox/mini-table.svg)](https://travis-ci.org/blinkfox/mini-table) [![GitHub license](https://img.shields.io/github/license/blinkfox/mini-table.svg)](https://github.com/blinkfox/mini-table/blob/master/LICENSE) [![codecov](https://codecov.io/gh/blinkfox/mini-table/branch/master/graph/badge.svg)](https://codecov.io/gh/blinkfox/mini-table) ![Java Version](https://img.shields.io/badge/Java-%3E%3D%206-blue.svg)
+[![HitCount](http://hits.dwyl.io/blinkfox/mini-table.svg)](http://hits.dwyl.io/blinkfox/mini-table) [![Build Status](https://secure.travis-ci.org/blinkfox/mini-table.svg)](https://travis-ci.org/blinkfox/mini-table) [![Javadocs](http://www.javadoc.io/badge/com.blinkfox/mini-table.svg)](http://www.javadoc.io/doc/com.blinkfox/mini-table) [![GitHub license](https://img.shields.io/github/license/blinkfox/mini-table.svg)](https://github.com/blinkfox/mini-table/blob/master/LICENSE) [![codecov](https://codecov.io/gh/blinkfox/mini-table/branch/master/graph/badge.svg)](https://codecov.io/gh/blinkfox/mini-table) [![Maven Central](https://img.shields.io/maven-central/v/com.blinkfox/mini-table.svg)](https://search.maven.org/artifact/com.blinkfox/mini-table/1.0.0/jar) ![Java Version](https://img.shields.io/badge/Java-%3E%3D%206-blue.svg)
 
 [中文文档](https://github.com/blinkfox/mini-table/blob/master/README_CN.md)
 
-> A lightweight, no dependencies Java ASCII TABLE generation library.
+> A lightweight, zero-dependency Java ASCII TABLE generation library.
 
 ## Features
 
